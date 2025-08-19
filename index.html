@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" id="result" value="0" readonly>
+        </div>
+        <div class="button">
+            <button onclick="appendValue('7')">7</button>
+            <button onclick="appendValue('8')">8</button>
+            <button onclick="appendValue('9')">9</button>
+            <button class="operator" onclick="appendValue('+')">&plus;</button>
+            <button onclick="appendValue('7')">6</button>
+            <button onclick="appendValue('8')">5</button>
+            <button onclick="appendValue('9')">4</button>
+            <button class="operator" onclick="appendValue('-')">&minus;</button>
+            <button onclick="appendValue('7')">3</button>
+            <button onclick="appendValue('8')">2</button>
+            <button onclick="appendValue('9')">1</button>
+            <button class="operator" onclick="appendValue('*')">&divide;</button>
+            <button class="clear" onclick="clearResult()">C</button>
+            <button onclick="appendValue('0')">0</button>
+            <button class="operator" onclick="calculateResult()">&equals;</button>
+            <button class="operator" onclick="appendValue('/')">&times;</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
